@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+// insert our own components in here 
 
 function App() {
   return (
