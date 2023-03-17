@@ -1,12 +1,12 @@
 import React from "react";
-
+import logo from './assets/ReadMe-logo.png';
 const NavBar = () => {
   return (
-    <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="#">
           {/*Insert your logo image here*/}
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Logo" />
+          <img src={logo} width="300" height="300" alt="ReadMe Logo" />
         </a>
 
         <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
