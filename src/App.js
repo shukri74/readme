@@ -4,13 +4,14 @@ import { useState } from 'react';
 import './app.css';
 import 'bulma/css/bulma.min.css';
 import Navbar from './navbar';
-import logo from './assets/ReadMe-logo.png';
+import Hero from './hero';
 
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Hero />
      {/* The rest of your app goes here */}
     </div>
   );
