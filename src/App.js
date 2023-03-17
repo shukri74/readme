@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './app.css';
 import 'bulma/css/bulma.min.css';
 import Navbar from './navbar';
-import logo from './assets/ReadMe-logo.png';
+
 
 
 function App() {
