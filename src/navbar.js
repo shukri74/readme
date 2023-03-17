@@ -6,7 +6,7 @@ const NavBar = () => {
       <div className="navbar-brand">
         <a className="navbar-item" href="#">
           {/*Insert your logo image here*/}
-          <img src={logo} width="300" height="150" alt="ReadMe Logo" />
+          <img src={logo} width="100" height="100" alt="ReadMe Logo" />
         </a>
 
         <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
