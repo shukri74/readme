@@ -1,5 +1,6 @@
 import React from "react";
-import logo from './assets/ReadMe-logo.png';
+import "./style.css";
+import logo from '../../assets/ReadMe-logo.png';
 const NavBar = () => {
   return (
     <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
