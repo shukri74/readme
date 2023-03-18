@@ -4,6 +4,19 @@ import heroImage from '../assets/hero-section.jpg';
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import API from "../utils/API";
+import BookGallery from "../components/BookGallery";
+
+
+// // loadNextDog = () => {
+//   API.getBooks()
+//     .then(res => {
+//       this.setState({
+//         image: res.data.message
+//       })}
+//     )
+//     .catch(err => console.log(err));
+// // };
 
 function About() {
   return (
@@ -17,6 +30,9 @@ function About() {
           <Col size="md-12">
             <h1>Welcome To BookStore!</h1>
           </Col>
+        </Row>
+        <Row>
+          <BookGallery/>
         </Row>
         <Row>
           <Col size="md-6">
