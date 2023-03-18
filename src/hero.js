@@ -4,7 +4,7 @@ import './hero.css';
 
 const Hero = () => {
   return (
-    <section className="hero is-primary is-fullheight-with-navbar">
+    <section className="hero is-transparent is-fullheight-with-navbar">
       <img src={heroImg} alt="Hero image" className="hero-img"/>
       <div className="hero-body is-overlay">
         <div className="container">
