@@ -1,0 +1,10 @@
+.footer {
+    min-height: 50px;
+    background: #E5E5E5;
+  }
+  
+  .footer span {
+    padding: 3px;
+    background: #B8B8B8;
+  }
+  

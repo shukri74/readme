@@ -1,8 +1,6 @@
 import React from "react";
-import logo from './assets/ReadMe-logo.png';
-import './navbar.css';
-
-
+import "./style.css";
+import logo from '../../assets/ReadMe-logo.png';
 
 const NavBar = () => {
   return (
