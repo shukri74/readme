@@ -35,6 +35,13 @@ const NavBar = () => {
           </NavLink>
 
           <NavLink
+            to="/reading-list"
+            end
+            className="navbar-item">
+            Reading list
+          </NavLink>
+
+          <NavLink
             to="/contact"
             end
             className="navbar-item">
