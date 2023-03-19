@@ -7,13 +7,13 @@ import Alert from "../components/Alert";
 
 function Search() {
   const [book, setBook] = useState("The Lord of the Rings");
-  const [title, setTitle] = useState("");
-  const [publishDate, setPublishDate] = useState("");
-  const [publishPlace, setPublishPlace] = useState("");
-  const [contributor, setContributor] = useState("");
-  const [publisher, setPublisher] = useState("");
-  const [language, setLanguage] = useState("");
-  const [coverImage, setCoverImage] = useState("");
+  // const [title, setTitle] = useState("");
+  // const [publishDate, setPublishDate] = useState("");
+  // const [publishPlace, setPublishPlace] = useState("");
+  // const [contributor, setContributor] = useState("");
+  // const [publisher, setPublisher] = useState("");
+  // const [language, setLanguage] = useState("");
+  // const [coverImage, setCoverImage] = useState("");
 
   const [error, setError] = useState("");
 
@@ -30,17 +30,16 @@ function Search() {
         if (res.data.status === "error") {
           throw new Error(res.data.message);
         }
-        setTitle(res.data.docs[0].title);
-        setPublishDate(res.data.docs[0].publish_date[0]);
-        setPublishPlace(res.data.docs[0].publish_place[0]);
+        // setTitle(res.data.docs[0].title);
+        console.log(res.data.docs[0].title);
+        // setPublishDate(res.data.docs[0].publish_date[0]);
+        // setPublishPlace(res.data.docs[0].publish_place[0]);
 
-        setContributor(res.data.docs[0].contributor[0]);
-        setPublisher(res.data.docs[0].publisher[0]);
-        setLanguage(res.data.docs[0].language[0]);
-        setCoverImage("https://covers.openlibrary.org/b/olid/"+res.data.docs[0].cover_edition_key+".jpg");
+        // setContributor(res.data.docs[0].contributor[0]);
+        // setPublisher(res.data.docs[0].publisher[0]);
+        // setLanguage(res.data.docs[0].language[0]);
+        // setCoverImage("https://covers.openlibrary.org/b/olid/"+res.data.docs[0].cover_edition_key+".jpg");
 
-        // console.log("Api response results: "+res.data);
-        // console.log("Api response: "+res.data.docs[0].title)
       })
       .catch(err => setError(err));
   }, [book]);
@@ -60,9 +59,11 @@ function Search() {
           handleInputChange={handleInputChange}
           results={book}
         />
-        <SearchResults title={title} publishDate={publishDate} publishPlace={publishPlace}
-        contributor={contributor} publisher={publisher} language={language}
-        coverImage={coverImage}
+        <SearchResults 
+        // title={title} 
+        // publishDate={publishDate} publishPlace={publishPlace}
+        // contributor={contributor} publisher={publisher} language={language}
+        // coverImage={coverImage}
         />
       </Container>
     </div>

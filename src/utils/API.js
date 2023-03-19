@@ -5,5 +5,9 @@ import axios from "axios";
 export default {
   searchBook: function(book) {
     return axios.get("https://openlibrary.org/search.json?q" +book);
+  },
+  getQuote: function() {
+    return axios.get("https://api.quotable.io/random");
   }
+
 };

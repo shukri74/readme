@@ -4,6 +4,8 @@ import heroImage from '../assets/hero-section.jpg';
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import QuoteSection from "../components/QuoteSection";
+
 import API from "../utils/API";
 import BookGallery from "../components/BookGallery";
 
@@ -16,6 +18,7 @@ function About() {
         <h1>There have been over 130,000,000 books published since the invention of printing 
           Find the right one for you:</h1>
       </Hero>
+      <QuoteSection/>
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
