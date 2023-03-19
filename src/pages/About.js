@@ -14,15 +14,12 @@ import BookGallery from "../components/BookGallery";
 function About() {
   return (
     <div>
-      <Hero backgroundImage={heroImage}>
-        <h1>There have been over 130,000,000 books published since the invention of printing 
-          Find the right one for you:</h1>
-      </Hero>
+      <Hero backgroundImage={heroImage}></Hero>
       <Container style={{ marginTop: 30 }}>
       <QuoteSection />
         <Row>
           <Col size="md-12">
-            <h1>Welcome To BookStore!</h1>
+            <h1>You might like...</h1>
           </Col>
         </Row>
         

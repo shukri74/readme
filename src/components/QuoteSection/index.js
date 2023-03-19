@@ -31,18 +31,14 @@ function Quotes() {
     }, [quote]);
 
 
-  return (
-    <section className="hero is-warning is-medium">
-        <div className="hero-body">
-            <div className="container">
-                <div className="content has-text-centered">
-                    {quote && <p style={{fontSize: "1.5rem", fontWeight: "bold"}}>{quote}</p>}
-                    {author && <p style={{fontSize: "1rem",fontWeight: "bold"}} >by {author}</p>}
-                </div>
-            </div>
+    return (
+      <div className="quote-container">
+        <div className="quote-content has-text-centered">
+          {quote && <p style={{fontSize: "1.5rem", fontWeight: "bold"}}>{quote}</p>}
+          {author && <p style={{fontSize: "1rem",fontWeight: "bold"}} >by {author}</p>}
         </div>
-    </section>
-  );
+      </div>
+    );
 }
 
 export default Quotes;

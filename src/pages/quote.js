@@ -20,7 +20,7 @@ function Quote() {
     fetchQuote();
     const interval = setInterval(() => {
       fetchQuote();
-    }, 4000); // replace with the interval time you prefer in milliseconds
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
