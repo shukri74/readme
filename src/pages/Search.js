@@ -7,6 +7,16 @@ import Alert from "../components/Alert";
 
 function Search() {
   const [book, setBook] = useState("The Lord of the Rings");
+    const [bookState, setBookState] = useState({
+      title: "",
+      publishDate: "",
+      publishPlace: "",
+      contributor: "",
+      publisher: "",
+      language: "",
+      coverImage: ""
+    });
+  // const [book, setBook] = useState("The Lord of the Rings");
   // const [title, setTitle] = useState("");
   // const [publishDate, setPublishDate] = useState("");
   // const [publishPlace, setPublishPlace] = useState("");
@@ -32,6 +42,16 @@ function Search() {
         }
         // setTitle(res.data.docs[0].title);
         console.log(res.data.docs[0].title);
+        setBookState({
+          title: res.data.docs[0].title,
+          publishDate: res.data.docs[0].publish_date[0],
+          publishPlace: res.data.docs[0].publish_place[0],
+          contributor: res.data.docs[0].contributor[0],
+          publisher: res.data.docs[0].publisher[0],
+          language: res.data.docs[0].language[0],
+          coverImage: "https://covers.openlibrary.org/b/olid/"+res.data.docs[0].cover_edition_key+".jpg"
+        })
+
         // setPublishDate(res.data.docs[0].publish_date[0]);
         // setPublishPlace(res.data.docs[0].publish_place[0]);
 
@@ -60,6 +80,7 @@ function Search() {
           results={book}
         />
         <SearchResults 
+        {...setBookState}
         // title={title} 
         // publishDate={publishDate} publishPlace={publishPlace}
         // contributor={contributor} publisher={publisher} language={language}

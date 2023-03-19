@@ -8,6 +8,9 @@ export default {
   },
   searchBook: function(book) {
     return axios.get("https://openlibrary.org/search.json?q" +book);
+  },
+  getBooks: function() {
+    return axios.get("https://openlibrary.org/works/OL45804W/editions.json");
   }
 
 };
