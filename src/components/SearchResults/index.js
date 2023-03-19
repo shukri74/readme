@@ -13,7 +13,6 @@ function SearchResults(props) {
         <p>Publisher: {props.publisher}</p>
         <p>Language: {props.language}</p>
         <img src={props.coverImage} alt={props.title}/>
-        
       </li>
     </ul>
   );
