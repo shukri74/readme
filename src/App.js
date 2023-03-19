@@ -1,18 +1,14 @@
 // insert our own components in here 
-import axios from 'axios';
-import { useState } from 'react';
 import './app.css';
-import 'bulma/css/bulma.min.css';
-// import Hero from './hero';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import 'bulma/css/bulma.min.css';
 // import Quotes from './pages/Quotes';
 import About from './pages/About';
 // import Search from './pages/Search';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
