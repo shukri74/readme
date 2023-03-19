@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import 'bulma/css/bulma.min.css';
+import '../pages/quote.css';
 
 function Quote() {
   const [quote, setQuote] = useState("");

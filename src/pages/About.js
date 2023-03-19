@@ -8,15 +8,7 @@ import API from "../utils/API";
 import BookGallery from "../components/BookGallery";
 
 
-// // loadNextDog = () => {
-//   API.getBooks()
-//     .then(res => {
-//       this.setState({
-//         image: res.data.message
-//       })}
-//     )
-//     .catch(err => console.log(err));
-// // };
+
 
 function About() {
   return (
