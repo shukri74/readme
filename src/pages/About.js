@@ -18,7 +18,6 @@ function About() {
         <h1>There have been over 130,000,000 books published since the invention of printing 
           Find the right one for you:</h1>
       </Hero>
-      <QuoteSection/>
       <Container style={{ marginTop: 30 }}>
         <Row>
           <Col size="md-12">
