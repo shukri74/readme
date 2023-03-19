@@ -22,7 +22,7 @@ function Quotes() {
           if (res.data.status === "error") {
             throw new Error(res.data.message);
           }
-          console.log(res.data.content);
+          // console.log(res.data.content);
           setQuote(res.data.content);
           setAuthor(res.data.author);
         })
