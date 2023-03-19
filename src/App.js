@@ -14,20 +14,15 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
 
-
-
-
 function App() {
   return (
      <Router>
       <div className="App">
         <Navbar />
-        {/* <Hero /> */}
         <Wrapper>
           <Routes>
             <Route path="/" element={<About/>} />
             <Route path="/about" element={<About/>} />
-        
             {/* <Route path="/quotes" element={<Quotes/>} /> */}
             {/* <Route path="/search" element={<Search/>} /> */}
           </Routes>
