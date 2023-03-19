@@ -1,6 +1,6 @@
 // insert our own components in here 
 import React from 'react';
-import 'bulma/css/bulma.min.css';
+// import 'bulma/css/bulma.min.css';
 // import Contact from './pages/Contact';
 import About from './pages/About';
 import Search from './pages/Search';
