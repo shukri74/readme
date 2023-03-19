@@ -4,19 +4,12 @@ import heroImage from '../assets/hero-section.jpg';
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import QuoteSection from "../components/QuoteSection";
+
 import API from "../utils/API";
 import BookGallery from "../components/BookGallery";
 
 
-// // loadNextDog = () => {
-//   API.getBooks()
-//     .then(res => {
-//       this.setState({
-//         image: res.data.message
-//       })}
-//     )
-//     .catch(err => console.log(err));
-// // };
 
 function About() {
   return (
