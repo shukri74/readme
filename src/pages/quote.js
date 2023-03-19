@@ -20,21 +20,17 @@ function Quote() {
     fetchQuote();
     const interval = setInterval(() => {
       fetchQuote();
-    }, 6000); // replace with the interval time you prefer in milliseconds
+    }, 4000); // replace with the interval time you prefer in milliseconds
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="hero is-warning is-medium">
-      <div className="hero-body">
-        <div className="container">
-          <div className="content has-text-centered">
-            {quote && <p style={{fontSize: "1.5rem", fontWeight: "bold"}}>{quote}</p>}
-            {author && <p style={{fontSize: "1rem",fontWeight: "bold"}} >by {author}</p>}
-          </div>
-        </div>
+    <div className="quote-container">
+      <div className="quote-content has-text-centered">
+        {quote && <p style={{fontSize: "1.5rem", fontWeight: "bold"}}>{quote}</p>}
+        {author && <p style={{fontSize: "1rem",fontWeight: "bold"}} >by {author}</p>}
       </div>
-    </section>
+    </div>
   );
 }
 

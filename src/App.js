@@ -1,11 +1,12 @@
 // insert our own components in here 
 import './app.css';
 import React from 'react';
-import 'bulma/css/bulma.min.css';
-import Quote from './pages/quote';
+// import 'bulma/css/bulma.min.css';
+// import Contact from './pages/Contact';
 import About from './pages/About';
-// import Search from './pages/Search';
+import Search from './pages/Search';
 import Navbar from './components/Navbar';
+// import QuoteSection from './components/QuoteSection';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Hero from "./components/Hero";
@@ -15,15 +16,14 @@ function App() {
      <Router>
       <div className="App">
         <Navbar />
-        {/* <Hero /> */}
        
-        <Quote />
+        {/* <Wrapper> */}
           <Routes>
             
             <Route path="/" element={<About/>} />
-            {/* <Route path="/about" element={<About/>} /> */}
-            {/* <Route path="/quote" element={<Quote/>} /> */}
-            {/* <Route path="/search" element={<Search/>} /> */}
+            <Route path="/about" element={<About/>} />
+            {/* <Route path="/contact" element={<Contact/>} /> */}
+            <Route path="/search" element={<Search/>} />
           </Routes>
           
        

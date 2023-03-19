@@ -4,9 +4,10 @@ import heroImage from '../assets/hero-section.jpg';
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import QuoteSection from "../components/QuoteSection";
+
 import API from "../utils/API";
 import BookGallery from "../components/BookGallery";
-
 
 
 
@@ -18,14 +19,17 @@ function About() {
           Find the right one for you:</h1>
       </Hero>
       <Container style={{ marginTop: 30 }}>
+      <QuoteSection />
         <Row>
           <Col size="md-12">
             <h1>Welcome To BookStore!</h1>
           </Col>
         </Row>
+        
         <Row>
           <BookGallery/>
         </Row>
+        
         <Row>
           <Col size="md-6">
             <p>
@@ -38,6 +42,7 @@ function About() {
             </p>
           </Col>
         </Row>
+       
       </Container>
     </div>
   );

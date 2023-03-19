@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from 'react-router-dom';
 import "./style.css";
 import logo from '../../assets/ReadMe-logo.png';
 
@@ -6,10 +7,9 @@ const NavBar = () => {
   return (
     <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#">
-          {/*Insert your logo image here*/}
-          <img src={logo} width="100" height="100" alt="ReadMe Logo" />
-        </a>
+        <Link className="navbar-brand" to="/">
+          <img className='readMe-logo' src={logo} width="100"  alt="ReadMe Logo" />
+        </Link>
 
         <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
@@ -20,17 +20,27 @@ const NavBar = () => {
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-end">
-          <a className="navbar-item">
+          <NavLink
+            to="/"
+            end
+            className="navbar-item">
             Quotes
-          </a>
+          </NavLink>
 
-          <a className="navbar-item">
+          <NavLink
+            to="/search"
+            end
+            className="navbar-item">
             Find a book
-          </a>
+          </NavLink>
 
-          <a className="navbar-item">
+          <NavLink
+            to="/contact"
+            end
+            className="navbar-item">
             Contact
-          </a>
+          </NavLink>
+
         </div>
       </div>
     </nav>
@@ -38,3 +48,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
