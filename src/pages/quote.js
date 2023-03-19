@@ -20,9 +20,9 @@ function Quote() {
       <div className="hero-body">
         <div className="container">
           <div className="content has-text-centered">
-            {quote && <p>{quote}</p>}
-            {author && <p>by {author}</p>}
-            <button className="button is-warning" onClick={getQuote}>Quote</button>
+            {quote && <p style={{fontSize: "1.5rem", fontWeight: "bold"}}>{quote}</p>}
+            {author && <p style={{fontSize: "1rem",fontWeight: "bold"}} >by {author}</p>}
+            <button className="button is-warning" onClick={getQuote}>Inspirational quotes</button>
           </div>
         </div>
       </div>
