@@ -2,7 +2,6 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
 import Quote from './pages/quote';
-//import axios from 'axios';
 import About from './pages/About';
 // import Search from './pages/Search';
 import Navbar from './components/Navbar';
