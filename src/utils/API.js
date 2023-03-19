@@ -1,32 +1,4 @@
 
-import axios from 'axios';
-import { useState } from 'react';
-import 'bulma/css/bulma.min.css';
-function API() {
-  
-    const [quote, setQuote] = useState ("")
-      const getQuote = () => {
-        axios.get("https://api.quotable.io/random").then(Response =>{
-          setQuote(Response.data.content)
-
-        }).catch (Error =>{
-          
-
-        })
-
-        
-
-
-      }
-      return (
-      <div className="app">
-        {quote && <p>{quote}</p>}
-        <button onClick={getQuote}>quote</button>
-
-    </div>
-      );
-}
-export default API;
 //import axios from "axios";
 
 // Export an object containing methods we'll use for accessing the Dog.Ceo API
@@ -42,7 +14,4 @@ export default API;
 //     return axios.get("https://dog.ceo/api/breeds/list");
 //   }
 //};
-
-
-
 
