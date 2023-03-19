@@ -37,3 +37,34 @@
   margin-top: 0;
 }
 
+.typed-text {
+  animation: fade-in-out 15s infinite;
+  margin-bottom: 50px;
+}
+
+.typed-text.hidden {
+  display: none;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.field {
+ margin-top: 10px;
+}
+
+.subtitle {
+  margin-top: 20px !important;
+}
