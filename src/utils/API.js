@@ -6,9 +6,9 @@ export default {
   getBooks: function() {
     return axios.get("https://openlibrary.org/works/OL45804W/editions.json");
   },
-//   getDogsOfBreed: function(breed) {
-//     return axios.get("https://dog.ceo/api/breed/" + breed + "/images");
-//   },
+  searchBook: function(book) {
+    return axios.get("https://openlibrary.org/search.json?q=" + book);
+  },
 //   getBaseBreedsList: function() {
 //     return axios.get("https://dog.ceo/api/breeds/list");
 //   }
