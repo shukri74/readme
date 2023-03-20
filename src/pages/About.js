@@ -19,18 +19,18 @@ function About() {
           Find the right one for you:</h1>
       </Hero>
       <QuoteSection/>
-      <Container style={{ marginTop: 30 }}>
+
         <Row>
           <Col> 
-            <h1>Welcome To BookStore!</h1>
+            <h1>You might like...</h1>
           </Col>
         </Row>
+        
         <Row>
           <Col>
             <BookGallery/>
           </Col>
         </Row>
-      </Container>
     </div>
   );
 }

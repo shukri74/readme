@@ -1,0 +1,13 @@
+.quote-container {
+  width: auto;
+  height: auto;
+  margin: 3%;
+  padding: auto;
+  background-color: rgba(36, 113, 36, 0.689);
+}
+
+/* fix the sizing of the quotes because it's too big */
+.quote-content {
+  font-size: 15px;
+  font-weight: bold;
+}
