@@ -1,5 +1,5 @@
 import React from "react";
-import '../Hero/abt.css'
+
 
 function AboutUsHero() {
   return (

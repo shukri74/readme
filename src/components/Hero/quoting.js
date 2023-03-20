@@ -1,9 +1,10 @@
 import React from "react";
+import "../Hero/quoting.css";
 
 function QuoteHero() {
   return (
     <div className="hero is-fullheight is-black">
-      <div className="hero-body">
+      <div className="hero-body quote">
         <div className="container has-text-centered">
           <h1 className="title is-size-1 has-text-white">
             Books are a uniquely portable magic.
