@@ -12,9 +12,7 @@ import BookGallery from "../components/BookGallery";
 function About() {
   return (
     <div>
-      <HeroCarousel>
-    
-      </HeroCarousel>
+      <HeroCarousel/>
       <QuoteSection/>
 
         <Row>
