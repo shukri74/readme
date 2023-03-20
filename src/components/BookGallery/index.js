@@ -8,6 +8,7 @@ import Book from '../Book'
 const BookGallery = () => {
   const [bookState, setBookState] = useState([]);
 
+
 const [error, setError] = useState("");
 
 useEffect(() => {
@@ -30,11 +31,15 @@ useEffect(() => {
 
     const bookList = bookState.map(book => <Book {...book} key={book.local_id} />)
     return (
-        <div
-            className='gallery-container' data-test='char-gallery'>
+    <div className="card">
             {bookList}
         </div>
     );
 };
 
+{/* // <div    className='gallery-container' data-test='char-gallery'>
+        //     {bookList}
+        // </div> */}
+
 export default BookGallery;
+
