@@ -1,0 +1,13 @@
+.navbar {
+  background-color: rgb(82, 41, 10) !important;
+  /* height: 100px !important; */
+}
+
+.navbar-item {
+  color: white !important;
+}
+
+.readMe-logo {
+  margin-left: 20px;
+  width: 150px;
+}
