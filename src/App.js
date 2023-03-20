@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <QuoteSection />
+        {/* <QuoteSection /> */}
         <Wrapper>
           <Routes>
             <Route path="/" element={<About/>} />
