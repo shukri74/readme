@@ -6,7 +6,7 @@ import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
 
 function Search() {
-  const [book, setBook] = useState("The Lord of the Rings");
+  const [book, setBook] = useState("His Last Bow");
   const [title, setTitle] = useState("");
   const [publishDate, setPublishDate] = useState("");
   const [publishPlace, setPublishPlace] = useState("");
@@ -44,23 +44,25 @@ function Search() {
 
 
       })
-      .catch(err => setError(err));
+      .catch(err => setError("Book not found! Try different one."));
   }, [book]);
 
   const handleInputChange = event => {
+    setError("");
     setBook(event.target.value);
   };
 
   return (
     <div>
       <Container style={{ minHeight: "100vh" }}>
-        <h1 className="text-center">Search For Book</h1>
-        <Alert type="danger" style={{ opacity: error ? 1 : 0, marginBottom: 10 }}>
+        {/* <h1 className="text-center">Search For Book</h1> */}
+        {/* <Alert type="danger" style={{ opacity: error ? 1 : 0, marginBottom: 10 }}>
           {error}
-        </Alert>
+        </Alert> */}
         <SearchForm
           handleInputChange={handleInputChange}
           results={book}
+          error = {error}
         />
         <SearchResults 
         title={title} 
@@ -74,86 +76,3 @@ function Search() {
 }
 
 export default Search;
-
-
-
-
-
-
-
-
-
-
-// import React, { useState, useEffect } from "react";
-// import API from "../utils/API";
-// import Container from "../components/Container";
-// import SearchForm from "../components/SearchForm";
-// import SearchResults from "../components/SearchResults";
-// import Alert from "../components/Alert";
-
-
-
-// function Search() {
-//     const [book, setBook] = useState("The Lord of the Rings");
-//     const [title, setTitle] = useState("");
-//     // const [publishDate, setPublishDate] = useState("");
-//     // const [publishPlace, setPublishPlace] = useState("");
-//     // const [contributor, setContributor] = useState("");
-//     // const [publisher, setPublisher] = useState("");
-//     // const [language, setLanguage] = useState("");
-//     // const [coverImage, setCoverImage] = useState("");
-
-//   const [error, setError] = useState("");
-
-
-//     useEffect(() => {
-//         if (!book) {
-//           return;
-//         }
-    
-//         API.searchBook(book)
-//           .then(res => {
-//             if (res.data.length === 0) {
-//               throw new Error("No results found.");
-//             }
-//             if (res.data.status === "error") {
-//               throw new Error(res.data.message);
-//             }
-//             console.log("APi rexponse "+res.data.docs[0].title)
-//             setTitle(res.data.docs[0].title);
-//           })
-//           .catch(err => setError(err));
-//       }, [book]);
-
-  
-
-//     const handleInputChange = event => {
-//     setBook(event.target.value);
-//     console.log(book);
-//   };
-  
-  
-//     return (
-//     <div>
-//       <Container style={{ minHeight: "100vh" }}>
-//         <h1 className="text-center">Search For Book</h1>
-//         <Alert type="danger" style={{ opacity: error ? 1 : 0, marginBottom: 10 }}>
-//           {error}
-//         </Alert>
-//         <SearchForm
-//           handleInputChange={handleInputChange}
-//           results={book}
-//         />
-//         <SearchResults 
-//         title={title} 
-//         // publishDate={publishDate} publishPlace={publishPlace}
-//         // contributor={contributor} publisher={publisher} language={language}
-//         // coverImage={coverImage}
-//         />
-//       </Container>
-//     </div>
-//   );
-//   }
-
-
-//   export default Search;
