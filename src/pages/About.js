@@ -18,14 +18,8 @@ function About() {
         <h1>There have been over 130,000,000 books published since the invention of printing 
           Find the right one for you:</h1>
       </Hero>
+      <QuoteSection/>
       <Container style={{ marginTop: 30 }}>
-
-      {/* <div class="columns is-desktop">
-        <div class="column is-full"><h1>Welcome To BookStore!</h1></div>
-          <div class="column is-half">
-            <BookGallery/>
-          </div>
-      </div> */}
         <Row>
           <Col> 
             <h1>Welcome To BookStore!</h1>
