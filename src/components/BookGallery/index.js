@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Col from "../Col";
+
 
 // import bookData from '../../bookData.json'
 import API from "../../utils/API";
@@ -31,7 +33,7 @@ useEffect(() => {
 
     const bookList = bookState.map(book => <Book {...book} key={book.local_id} />)
     return (
-    <div className="card">
+        <div className="card">
             {bookList}
         </div>
     );
