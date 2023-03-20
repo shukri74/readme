@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero";
+import HeroCarousel from "../components/Hero/herocarousel";
 import heroImage from '../assets/hero-section.jpg';
 // import Container from "../components/Container";
 import Row from "../components/Row";
@@ -14,10 +14,9 @@ import BookGallery from "../components/BookGallery";
 function About() {
   return (
     <div>
-      <Hero backgroundImage={heroImage}>
-        <h1>There have been over 130,000,000 books published since the invention of printing 
-          Find the right one for you:</h1>
-      </Hero>
+      <HeroCarousel backgroundImage={heroImage}>
+    
+      </HeroCarousel>
       <QuoteSection/>
 
         <Row>
