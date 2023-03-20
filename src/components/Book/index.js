@@ -5,6 +5,7 @@ const Book = ({ title,  publishers, authors, publish_date }) => {
     // let url = https://covers.openlibrary.org/b/olid/${key}.jpg;
     // https://covers.openlibrary.org/b/olid/OL46528354M.jpg
     // console.log(url);
+
     return (     
       <div className='column is-half'>
         <div className="card-image">
@@ -38,7 +39,7 @@ Book.propTypes = {
     // key: PropTypes.string,
     publishers: PropTypes.string,
     publish_date: PropTypes.string,
-    authors: PropTypes.string,
+    // authors: PropTypes.string,
 
 }
 
