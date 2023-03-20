@@ -5,7 +5,7 @@ import "./style.css";
 function SearchForm(props) {
   return (
     <form className="search">
-      <div className="form-group">
+      {/* <div className="form-group">
         <label htmlFor="language">Search Book:</label>
         <input
           value={props.search}
@@ -17,6 +17,18 @@ function SearchForm(props) {
           placeholder="Type book name for search"
           id="term"
         />
+      </div> */}
+      <div class="control">
+        <label htmlFor="search"><strong>Search Book:</strong></label>
+        <input 
+        value={props.search}
+        onChange={props.handleInputChange}
+        name="term"
+        list="term"
+        type="text"
+        className="input is-focused"
+        placeholder="Type book name for search"
+        id="term"/>
       </div>
     </form>
   );

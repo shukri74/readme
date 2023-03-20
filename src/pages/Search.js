@@ -14,6 +14,7 @@ function Search() {
   const [publisher, setPublisher] = useState("");
   const [language, setLanguage] = useState("");
   const [coverImage, setCoverImage] = useState("");
+  const [authorImage, setAuthorImage] = useState("");
 
   const [error, setError] = useState("");
 
@@ -39,6 +40,8 @@ function Search() {
         setPublisher(res.data.docs[0].publisher[0]);
         setLanguage(res.data.docs[0].language[0]);
         setCoverImage("https://covers.openlibrary.org/b/olid/"+res.data.docs[0].cover_edition_key+".jpg");
+        setAuthorImage("https://covers.openlibrary.org/a/olid/"+res.data.docs[0].author_key[0]+".jpg");
+
 
       })
       .catch(err => setError(err));
@@ -63,7 +66,7 @@ function Search() {
         title={title} 
         publishDate={publishDate} publishPlace={publishPlace}
         contributor={contributor} publisher={publisher} language={language}
-        coverImage={coverImage}
+        coverImage={coverImage} authorImage={authorImage}
         />
       </Container>
     </div>
