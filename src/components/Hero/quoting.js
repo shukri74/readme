@@ -12,25 +12,25 @@ function QuoteHero() {
           <div className="columns">
             <div className="column">
               <img
-                src="../../assets/book 5.png"
+                src="../../assets/book-5.png"
                 alt="book cover"
               />
             </div>
             <div className="column">
               <img
-                src="../../assets/book 2.png"
+                src="../../assets/book-2.png"
                 alt="book cover"
               />
             </div>
             <div className="column">
               <img
-                src="../../assets/book 3.png"
+                src="../../assets/book-3.png"
                 alt="book cover"
               />
             </div>
             <div className="column">
               <img
-                src="../../assets/book 4.png"
+                src="../../assets/book-4.png"
                 alt="book cover"
               />
             </div>
