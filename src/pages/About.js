@@ -6,7 +6,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import QuoteSection from "../components/QuoteSection";
 
-import API from "../utils/API";
+// import API from "../utils/API";
 import BookGallery from "../components/BookGallery";
 
 

@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Book = ({ title, key, publishers, authors, publish_date }) => {
-    // const url = "https://covers.openlibrary.org/b/olid/"+key+".jpg";
+    // let url = https://covers.openlibrary.org/b/olid/${key}.jpg;
     // console.log(url);
     return (
         <div className="card-image">
             <figure className="image is-1by1">
-                <img src="https://covers.openlibrary.org/b/olid/OL46528354M.jpg" alt="Placeholder image"/>
+                <img src="https://covers.openlibrary.org/b/olid/OL46528354M.jpg" alt="Placeholder image"/>;
             </figure>
             <div class="card-content">
             <div class="media">
