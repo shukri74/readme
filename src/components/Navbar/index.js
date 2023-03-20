@@ -24,7 +24,7 @@ const NavBar = () => {
             to="/"
             end
             className="navbar-item">
-            Quotes
+            Home
           </NavLink>
 
           <NavLink

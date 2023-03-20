@@ -16,8 +16,6 @@ function App() {
      <Router>
       <div className="App">
         <Navbar />
-       
-        {/* <Wrapper> */}
           <Routes>
             
             <Route path="/" element={<About/>} />
@@ -25,8 +23,7 @@ function App() {
             {/* <Route path="/contact" element={<Contact/>} /> */}
             <Route path="/search" element={<Search/>} />
           </Routes>
-          
-       
+        
         <Footer />
       </div>
     </Router>
