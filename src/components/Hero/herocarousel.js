@@ -4,13 +4,15 @@ import React from 'react';
 import Hero from './index';
 import AboutUs from './abt';
 import Quotes from './quoting';
+import heroImage from '../../assets/hero-section.jpg';
+
 
 const HeroCarousel = () => {
   return (
     <div id="hero-carousel" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <Hero />
+          <Hero backgroundImage={heroImage}/>
         </div>
         <div className="carousel-item">
           <AboutUs />
