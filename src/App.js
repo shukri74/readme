@@ -24,10 +24,10 @@ function App() {
             <Route path="/about" element={<About/>} />
             {/* <Route path="/contact" element={<Contact/>} /> */}
             <Route path="/search" element={<Search/>} />
-            <Route path="/list" element={<ReadingList/>} />
+            <Route path="/reading-list" element={<ReadingList/>} />
           </Routes>
         
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );
