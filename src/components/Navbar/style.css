@@ -1,11 +1,10 @@
 .navbar {
-  background: linear-gradient(to bottom, #cdfa03, #3dae68) !important;
-  height: 25px;
+  background-color: rgb(70, 35, 0) !important;
+
 }
 
 .navbar-item {
   color: white !important;
-  padding-bottom: 35px !important;
 
 }
 
