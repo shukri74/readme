@@ -1,10 +1,12 @@
 .navbar {
-  background-color: rgb(70, 35, 0) !important;
+  background: linear-gradient(to bottom, #cdfa03, #3dae68) !important;
 
+ 
 }
 
 .navbar-item {
   color: white !important;
+  
 
 }
 
