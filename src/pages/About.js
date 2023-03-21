@@ -14,18 +14,7 @@ function About() {
     <div>
       <HeroCarousel/>
       <QuoteSection/>
-
-        <Row>
-          <Col> 
-            <h1>You might like...</h1>
-          </Col>
-        </Row>
-        
-        <Row>
-          <Col>
-            <BookGallery/>
-          </Col>
-        </Row>
+      <BookGallery/>
     </div>
   );
 }
