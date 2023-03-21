@@ -1,79 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Section } from 'react-bulma-components';
 import '../ReadingList/Reading-list.css';
+import Book from '../Book';
 
 function ReadingList() {
+  const [recommendedBooks, setRecommendedBooks] = useState([]);
+
+  useEffect(() => {
+    async function fetchRecommendedBooks() {
+      try {
+        const response = await fetch('https://openlibrary.org/subjects/love.json?limit=3');
+        const data = await response.json();
+        setRecommendedBooks(data.works);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchRecommendedBooks();
+  }, []);
+
   return (
+    <div className="outer">
     <Section>
-      <Container>
-        <h2 className="title has-text-centered mb-4">My Reading List</h2>
+      <Container className="inner">
+        <h2 className="title has-text-centered mb-4 fontList">My Reading List</h2>
         <div className="columns">
           <div className="column">
             <h3 className="subtitle has-text-centered mb-3">Saved Books</h3>
-            <div className="box">
+            <div className="box readingList">
               {/* SavedBooks component is where the saved books will be stored. */}
               {/* <SavedBooks /> */}
               <p>You haven't saved any books yet.</p>
             </div>
           </div>
           <div className="column">
-            <h3 className="subtitle has-text-centered mb-3">Recommended Books</h3>
-            <div className="columns is-multiline">
-              {/* RecommendedBooks component is where the recommended books will be displayed. */}
-              {/* <RecommendedBooks /> */}
-              <div className="column is-one-third">
-                <div className="card">
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Book cover" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <p className="title is-5">Book Title</p>
-                    <p className="subtitle is-6">Author Name</p>
-                    <div className="content">
-                      Book description goes here.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="column is-one-third">
-                <div className="card">
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Book cover" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <p className="title is-5">Book Title</p>
-                    <p className="subtitle is-6">Author Name</p>
-                    <div className="content">
-                      Book description goes here.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="column is-one-third">
-                <div className="card">
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Book cover" />
-                    </figure>
-                  </div>
-                  <div className="card-content">
-                    <p className="title is-5">Book Title</p>
-                    <p className="subtitle is-6">Author Name</p>
-                    <div className="content">
-                      Book description goes here.
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h3 className="subtitle has-text-centered mb-3 fontList">Recommended Books</h3>
+            <div className="columns is-multiline readingListLine">
+              {recommendedBooks.map((book) => (
+                <Book
+                  key={book.key}
+                  title={book.title}
+                  publishers={book.publishers?.[0]}
+                  publish_date={book.publish_date}
+                />
+              ))}
             </div>
           </div>
         </div>
       </Container>
     </Section>
+    </div>
   );
 }
 

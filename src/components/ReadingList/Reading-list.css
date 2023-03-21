@@ -1,0 +1,22 @@
+
+.fontList {
+  font-family: arial;
+  color: white !important;
+}
+
+.inner {
+  background: linear-gradient(to bottom, #06aba0, #10f969,#f2cf23);
+}
+
+.readingListLine {
+  border-left: solid 1px white;
+
+}
+
+.outer {
+  background: linear-gradient(to bottom, #43ff8b, #26c4b9)
+}
+
+.readingList {
+  box-shadow: 5px 5px rgba(19, 170, 216, 0.587) !important;
+}

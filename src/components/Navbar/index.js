@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
 import "./style.css";
 import logo from '../../assets/ReadMe-logo.png';
 
 const NavBar = () => {
+  const [background, setBackground] = useState("#cdfa03, #3dae68"); // Set initial background color
+
+  const changeBackground = () => {
+    setBackground("#26c4b9, #43ff8b"); // Set new background color
+  }
+
   return (
     <nav className="navbar is-warning" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
@@ -37,7 +43,8 @@ const NavBar = () => {
           <NavLink
             to="/reading-list"
             end
-            className="navbar-item">
+            className="navbar-item"
+            onClick={changeBackground}>
             Reading list
           </NavLink>
 
@@ -55,4 +62,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
