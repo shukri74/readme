@@ -6,6 +6,8 @@ function QuoteHero() {
     <div className="hero is-fullheight is-black">
       <div className="hero-body quote">
         <div className="container has-text-centered">
+          <div className="padding">
+          </div>
           <h1 className="title is-size-1 has-text-white">
             Books are a uniquely portable magic.
           </h1>
