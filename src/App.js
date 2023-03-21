@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Hero from "./components/Hero";
 
+
 function App() {
   return (
      <Router>

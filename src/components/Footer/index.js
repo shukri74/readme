@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Footer() {
   return (
-    <footer className="footer" style={{ backgroundColor: 'green' }}>
+    <footer className="footer">
       <div className="content has-text-centered">
         <p>
           <strong>Developed by:</strong>
@@ -15,7 +15,10 @@ function Footer() {
         </p>
       </div>
     </footer>
+    
+       
   );
 }
+
 
 export default Footer;
