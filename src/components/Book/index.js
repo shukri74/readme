@@ -5,12 +5,14 @@ const Book = ({ title,  publishers, key, publish_date }) => {
     // let url = https://covers.openlibrary.org/b/olid/${key}.jpg;
     // https://covers.openlibrary.org/b/olid/OL46528354M.jpg
     // console.log(url);
+    let url =key.split("/");
+    console.log(url);
 
     return (     
       <div className='column is-half'>
         <div className="card-image">
             <figure className="image is-1by1">
-                <img src="https://covers.openlibrary.org/b/olid/OL46528354M.jpg" alt="Placeholder image"/>;
+                <img src={"https://covers.openlibrary.org/b/olid/"+{key}+".jpg"} alt="Placeholder image"/>;
             </figure>
             <div class="card-content">
             {/* <div class="media"> */}
