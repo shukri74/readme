@@ -6,6 +6,12 @@ const BookGallery = () => {
   const [bookState, setBookState] = useState([]);
   const [error, setError] = useState("");
 
+  function imageUrl(url) {
+    let img = url.split("/");
+    return img[2];
+    
+  }
+
   useEffect(() => {
     if (!bookState) {
       return;
@@ -20,11 +26,29 @@ const BookGallery = () => {
           throw new Error(res.data.message);
         }
         setBookState(res.data.entries);
+       
+        
       })
       .catch((err) => setError(err));
   }, []);
 
-  const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
+  // const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
+  const bookList = bookState.map((book) =>
+    <div className='column is-half'>
+      <div className="card-image">
+          <figure className="image is-1by1">
+              <img src={"https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"} alt="Placeholder image"/>
+          </figure>
+          <div class="card-content">
+              <p class="title is-4">{book.title}</p>
+              <p class="subtitle is-6">{book.publishers}</p>
+            <div class="content">
+              <time><strong>Published in </strong>{book.publish_date}</time>
+            </div>
+          </div>
+      </div>
+    </div>
+  );
 
     return (
         <div className="container">
