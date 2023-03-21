@@ -1,10 +1,8 @@
 .footer {
     min-height: 50px;
-    background: #6d6d6d !important;
+    background: linear-gradient(to bottom,#26c4b9,  #43ff8b) ;
   }
   
-  .footer span {
-    padding: 3px;
-    background: #B8B8B8;
-  }
+  
+  
   
