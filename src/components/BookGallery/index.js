@@ -28,6 +28,7 @@ const BookGallery = () => {
 
     return (
         <div className="container">
+          <h1 className="is-size-3 is-centered">You might like...</h1>
           <div className="columns is-multiline">
             {bookList}
           </div>
