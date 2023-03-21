@@ -1,5 +1,5 @@
 .is-black {
-  background-color: rgb(224, 209, 40) !important;
+  background: linear-gradient(to bottom, #3dae68, #dea51e) !important;
   height: 530px  !important;
 }
 
