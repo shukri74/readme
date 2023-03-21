@@ -5,7 +5,7 @@ import Hero from './index';
 import AboutUs from './abt';
 import Quotes from './quoting';
 import heroImage from '../../assets/hero-section.jpg';
-
+import './carousel.css';
 
 const HeroCarousel = () => {
   return (
