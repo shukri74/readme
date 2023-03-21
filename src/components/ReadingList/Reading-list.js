@@ -14,10 +14,6 @@ function ReadingList() {
             {/* SavedBooks component is where the saved books will be stored. */}
             {/* <SavedBooks /> */}
           </div>
-          <div className="column">
-          {/* RecommendedBooks component is where the random books will generate. */}
-            {/* <RecommendedBooks /> */}
-          </div>
         </div>
       </Container>
     </Section>
