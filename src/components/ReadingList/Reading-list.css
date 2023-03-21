@@ -6,6 +6,8 @@
 
 .inner {
   background: linear-gradient(to bottom, #06aba0, #10f969,#f2cf23);
+  border-radius: 10px;
+  /* background-color:rgb(31, 17, 0); */
 }
 
 .readingListLine {
