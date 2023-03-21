@@ -26,17 +26,27 @@ const BookGallery = () => {
 
   const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
 
-    return (
-        <div className="container">
-          <div className="columns is-multiline">
-            {bookList}
+  return (
+    <div className="container">
+      <div className="columns is-centered is-multiline">
+        {bookList.map((book) => (
+          <div key={book.props.local_id} className="column is-one-third">
+            <div className="card is-small">
+              <div className="card-image">
+                <figure className="image is-4by3">
+                  <img src={book.props.cover_edition_key} alt={book.props.title} />
+                </figure>
+              </div>
+              <div className="card-content">
+                <p className="title is-5">{book.props.title}</p>
+                <p className="subtitle is-6">{book.props.author_name}</p>
+              </div>
+            </div>
           </div>
-        </div>
-    );
+        ))}
+      </div>
+    </div>
+  );
 };
 
-
 export default BookGallery;
-
-
-

@@ -34,7 +34,7 @@ function Quotes() {
     return (
       <div className="quote-container">
         <div className="quote-content has-text-centered">
-          {quote && <p style={{fontSize: "110%", fontWeight: "bold", fontFamily: "arial"}}>{quote}</p>}
+          {quote && <p style={{fontSize: "100%", fontWeight: "bold", fontFamily: "arial"}}>{quote}</p>}
           {author && <p style={{fontSize: "100%",}} >by {author}</p>}
         </div>
       </div>
