@@ -5,7 +5,7 @@ function SearchResults(props) {
   return (
     <div class="card">
       <div class="card-image">
-        <figure class="image is-1by1">
+        <figure class="image is-4by3">
           <img src={props.coverImage} alt={props.title}/>
         </figure>
       </div>

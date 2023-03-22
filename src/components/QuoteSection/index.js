@@ -40,14 +40,14 @@ function Quotes() {
     <div className="section">
       <div className="container">
         <div className="columns is-centered">
-          <div className="column is-half">
-            <div className="box quote-box">
+          <div className="column card is-half">
+            <div className="card-content box quote-box">
               {error && <p className="has-text-danger">{error}</p>}
               {quote && (
                 <>
-                  <p className="title is-4 has-text-black">
-                    {truncate(quote, 200)}
-                    {quote.length > 200 && (
+                  <p className="title is-4 has-text-black" style={{height: "100px"}}>
+                    {truncate(quote, 100)}
+                    {quote.length > 100 && (
                       <button className="button is-text read-more-btn" onClick={handleReadMore}>
                         Read More
                       </button>
@@ -61,6 +61,23 @@ function Quotes() {
                 </>
               )}
             </div>
+
+
+
+            {/* <div class="card">
+              <div class="card-content">
+                <p class="title">
+                  “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                </p>
+                <p class="subtitle">
+                  Jeff Atwood
+                </p>
+              </div>
+            </div> */}
+
+
+
+
           </div>
         </div>
       </div>
