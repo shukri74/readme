@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Hero from "./components/Hero";
 import ReadingList from './components/ReadingList';
-
+import ContactUs from './components/Contact';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
             {/* <Route path="/contact" element={<Contact/>} /> */}
             <Route path="/search" element={<Search/>} />
             <Route path="/reading-list" element={<ReadingList/>} />
+            <Route path="/contact" element={<ContactUs/>} />
           </Routes>
         
         <Footer/>

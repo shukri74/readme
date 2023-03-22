@@ -22,7 +22,7 @@ function Hero(props) {
                   There have been over 130,000,000 books published since the invention of printing
                 </h1>
                 <h2 className="subtitle">
-                  Find one for you:
+                  Find one for you 📖
                 </h2>
               </div>
               <div className={!showFirstText ? "typed-text" : "typed-text hidden"}>
@@ -31,9 +31,7 @@ function Hero(props) {
                 </h1>
               </div>
               <div className="field">
-                <div className="control is-large">
-                  <input className="input is-primary is-rounded" type="text" placeholder="Search for a book" style={{width: '450px'}}/>
-                </div>
+             
               </div>
             </div>
           </div>

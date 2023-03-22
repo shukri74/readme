@@ -1,0 +1,37 @@
+.contact-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.github-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.github-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.github-icons a:hover {
+  color: #4183c4;
+}
