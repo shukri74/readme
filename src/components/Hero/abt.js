@@ -11,13 +11,10 @@ function AboutUsHero() {
           </h1>
           <br />
           <h2 className="subtitle is-size-4 has-text-white has-text-centered">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-            Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-            Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-            massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-            sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Curabitur sodales ligula in libero.
+         ReadMe is your ultimate destination for discovering your next favorite book! 
+          We are passionate about helping book lovers like you find new and exciting titles to read. 
+          Our platform is designed to make it easy and enjoyable for you to explore a vast range of books and discover 
+          ones that match your interests.
           </h2>
         </div>
       </div>
