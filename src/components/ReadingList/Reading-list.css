@@ -1,13 +1,17 @@
 
 .fontList {
   font-family: arial;
-  color: white !important;
+  color: rgb(50, 44, 44) !important;
 }
 
 .inner {
-  background: linear-gradient(to bottom, #06aba0, #10f969,#f2cf23);
+  background-color: #d8d2be;
   border-radius: 10px;
-  /* background-color:rgb(31, 17, 0); */
+  max-width: 800px;
+margin: 0 auto;
+padding: 50px 20px;
+text-align: center;
+
 }
 
 .readingListLine {
@@ -16,7 +20,7 @@
 }
 
 .outer {
-  background: linear-gradient(to bottom, #43ff8b, #26c4b9)
+  background: linear-gradient(to bottom, #43ff8b, #26c4b9);
 }
 
 .readingList {
