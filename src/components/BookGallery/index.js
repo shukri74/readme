@@ -32,7 +32,8 @@ const BookGallery = () => {
       .catch((err) => setError(err));
   }, []);
   
-
+// newlink = https://covers.openlibrary.org/b/isbn/9780385533225-S.jpg
+// oldlink = "https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"
   // const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
   const bookList = bookState.map((book) =>
     <div className='column is-half'>
