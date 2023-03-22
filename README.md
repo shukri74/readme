@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Readme Book Searching App is a web application that helps book lovers search for books and get inspirational quotes at the same time. This app uses the Open Library API and the Quotes API from quotable.io to provide users with a seamless experience of searching for books and getting inspired by quotes.
 
-In the project directory, you can run:
+##Features
 
-### `npm start`
+The Book Searching React App has the following features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Search for books by title, author, or subject
+View book details including the cover, author, publication date, and description and
+Get inspirational quotes generated on the front page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+### React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Open Library API
 
-### `npm run build`
+### Quotes API from quotable.io
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Axios for API requests
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Bootstrap for styling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### bulma css
 
-### `npm run eject`
+### node.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this app locally, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repository by running git clone https://github.com/Haroon-dev13/readme.git in the terminal or by downloading the ZIP file and extracting its contents.
+Navigate to the project directory by running cd {repository-name} in the terminal.
+Install the dependencies by running npm install in the terminal. This will install all the required packages and dependencies needed to run the app.
+Start the app by running npm start in the terminal. This will launch the app in your default web browser at http://localhost:3000.
+To stop the app, press Ctrl + C in the terminal.
+Alternatively, you can also run the app online by navigating to the deployed URL.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+That's it! You should now be able to use the Book Searching React App. If you have any issues or questions, please refer to the Contributing section or create an issue on GitHub.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions to this project are welcome. If you find a bug or would like to suggest an improvement, please create an issue on GitHub. If you would like to contribute code, please fork the repository and create a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions to this project are welcome. If you find a bug or would like to suggest an improvement, please create an issue on GitHub. If you would like to contribute code, please fork the repository and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The following contributors have contributed to this project:
+### [Shukri](https://github.com/shukri74)
+### [Eniola](https://github.com/eniolaxo)
+### [Haroon](https://github.com/Haroon-dev13)
+### [Jason](https://github.com/Shortms)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
