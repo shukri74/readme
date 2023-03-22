@@ -6,7 +6,7 @@ import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
 
 function Search() {
-  const [book, setBook] = useState("His Last Bow");
+  const [book, setBook] = useState("Fantastic Fables");
   const [title, setTitle] = useState("");
   const [publishDate, setPublishDate] = useState("");
   const [publishPlace, setPublishPlace] = useState("");
