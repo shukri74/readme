@@ -7,13 +7,15 @@ function SearchResults(props) {
       title: props.title,
       publishDate: props.publishDate,
     };
-    props.onSave(book);
+    if (typeof props.onSave === "function") {
+      props.onSave(book);
+    }
   };
 
   return (
-    <div class="card">
-      <div class="card-image">
-        <figure class="image is-4by3">
+    <div className="card">
+      <div className="card-image">
+        <figure className="image is-4by3">
           <img src={props.coverImage} alt={props.title}/>
         </figure>
       </div>
@@ -55,5 +57,9 @@ function SearchResults(props) {
     </div>
   );
 }
+
+SearchResults.defaultProps = {
+  onSave: () => {},
+};
 
 export default SearchResults;
