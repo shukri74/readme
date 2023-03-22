@@ -10,3 +10,7 @@
   font-size: 15px;
   font-weight: bold;
 }
+
+.backg {
+  background: linear-gradient(to bottom, #43ff8b, #26c4b9) !important;
+}

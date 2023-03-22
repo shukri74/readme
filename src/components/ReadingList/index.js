@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Section } from 'react-bulma-components';
 import '../ReadingList/Reading-list.css';
-import SearchResults from '../SearchResults';
 
 function ReadingList() {
   const [savedBooks, setSavedBooks] = useState([]);
 
-  function handleSave(book) {
-    setSavedBooks([...savedBooks, book]);
-  }
+  useEffect(() => {
+    const savedBooks = JSON.parse(localStorage.getItem('savedBooks')) || [];
+    setSavedBooks(savedBooks);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('savedBooks', JSON.stringify(savedBooks));
+  }, [savedBooks]);
 
   return (
     <div className="outer">

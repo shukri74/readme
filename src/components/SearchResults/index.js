@@ -46,7 +46,7 @@ function SearchResults(props) {
             <strong>Language: </strong> {props.language}
           </p>
           <p>
-            <strong>Publish in </strong>
+            <strong>Published in: </strong>
             {props.publishDate}
           </p>
         </div>

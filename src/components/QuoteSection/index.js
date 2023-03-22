@@ -37,7 +37,7 @@ function Quotes() {
   };
 
   return (
-    <div className="section">
+    <div className="section backg">
       <div className="container">
         <div className="columns is-centered">
           <div className="column card is-half">
