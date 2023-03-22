@@ -31,6 +31,7 @@ const BookGallery = () => {
       })
       .catch((err) => setError(err));
   }, []);
+  
 
   // const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
   const bookList = bookState.map((book) =>

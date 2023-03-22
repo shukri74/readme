@@ -3,8 +3,8 @@ import API from "../../utils/API";
 import "./style.css";
 
 function Quotes() {
-  const [quote, setQuote] = useState("");
-  const [author, setAuthor] = useState("");
+  const [quote, setQuote] = useState("Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.");
+  const [author, setAuthor] = useState("Buddha");
   const [error, setError] = useState("");
 
   useEffect(() => {
