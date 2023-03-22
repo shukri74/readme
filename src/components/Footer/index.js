@@ -8,10 +8,10 @@ function Footer() {
       <div className="content has-text-centered">
         <p>
           <strong>Developed by:</strong>
-          <a href="https://github.com/shukri74"><span className="icon"><i className="fab fa-github"></i></span>Shukri</a>,
-          <a href="https://github.com/JaneDoe"><span className="icon"><i className="fab fa-github"></i></span>Haroon</a>,
-          <a href="https://github.com/MaxDoe"><span className="icon"><i className="fab fa-github"></i></span>Jason</a>, and
-          <a href="https://github.com/SaraDoe"><span className="icon"><i className="fab fa-github"></i></span>Eniola</a>.
+          <a href="https://github.com/shukri74"><span className="icon"><i className="fab fa-github"></i></span>Shukri</a>&nbsp;
+          <a href="https://github.com/"Haroon-dev13><span className="icon"><i className="fab fa-github"></i></span>Haroon</a>&nbsp;
+          <a href="https://github.com/Shortms"><span className="icon"><i className="fab fa-github"></i></span>Jason</a>&nbsp; and
+          <a href="https://github.com/eniolaxo"><span className="icon"><i className="fab fa-github"></i></span>Eniola</a>&nbsp;
         </p>
       </div>
     </footer>
