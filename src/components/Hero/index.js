@@ -27,7 +27,7 @@ function Hero(props) {
               </div>
               <div className={!showFirstText ? "typed-text" : "typed-text hidden"}>
                 <h1 className="title">
-                  Explore millions of books and find your next adventure
+                  Explore millions of books...
                 </h1>
               </div>
               <div className="field">
