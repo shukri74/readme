@@ -53,11 +53,14 @@ const BookGallery = () => {
   );
 
     return (
-        <div className="container">
+      <div className='backg-cont' style={{ background: 'linear-gradient(to bottom, #43ff8b, #26c4b9)' }}>
+        <div className="container" style={{ textAlign: "center",backgroundColor: "#48c78e",  color: "white"}}>
+
           <h1 className="title is-size-3 is-centered text-cneter">You might like...</h1>
           <div className="columns is-multiline">
             {bookList}
           </div>
+        </div>
         </div>
     );
 };
