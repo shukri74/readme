@@ -35,3 +35,13 @@
 .github-icons a:hover {
   color: #4183c4;
 }
+
+.book-images {
+  display: flex; /* display the images in a row */
+  justify-content: center; /* center the images horizontally */
+}
+
+.book-images img {
+  width: 120px; /* set the width of the images */
+  margin: 0 10px; /* add some space between the images */
+}
