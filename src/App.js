@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import ContactUs from './components/Contact';
 import './app.css';
 import About from './pages/About';
 import Search from './pages/Search';
@@ -23,6 +23,7 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
           <Route path="/search" element={<Search onSave={handleSave} />} />
+          <Route path="/contact" element={<ContactUs/>} />
           <Route
             path="/reading-list"
             element={<ReadingList savedBooks={savedBooks} />}
