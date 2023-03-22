@@ -31,7 +31,9 @@ const BookGallery = () => {
       })
       .catch((err) => setError(err));
   }, []);
-
+  
+// newlink = https://covers.openlibrary.org/b/isbn/9780385533225-S.jpg
+// oldlink = "https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"
   // const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
   const bookList = bookState.map((book) =>
     <div className='column is-half'>
@@ -40,8 +42,8 @@ const BookGallery = () => {
               <img src={"https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"} alt="Placeholder image"/>
           </figure>
           <div class="card-content">
-              <p class="title is-4">{book.title}</p>
-              <p class="subtitle is-6">{book.publishers}</p>
+              <p class="title is-4"><strong>Book Title: </strong>{book.title}</p>
+              <p class="subtitle is-6"><strong>Publisher: </strong>{book.publishers}</p>
             <div class="content">
               <time><strong>Published in </strong>{book.publish_date}</time>
             </div>
@@ -52,7 +54,7 @@ const BookGallery = () => {
 
     return (
         <div className="container">
-          <h1 className="is-size-3 is-centered">You might like...</h1>
+          <h1 className="title is-size-3 is-centered text-cneter">You might like...</h1>
           <div className="columns is-multiline">
             {bookList}
           </div>

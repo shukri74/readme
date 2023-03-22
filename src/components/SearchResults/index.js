@@ -11,10 +11,10 @@ function SearchResults(props) {
   };
 
   return (
-    <div className="card">
-      <div className="card-image">
-        <figure className="image is-1by1">
-          <img src={props.coverImage} alt={props.title} />
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src={props.coverImage} alt={props.title}/>
         </figure>
       </div>
       <div className="card-content">
