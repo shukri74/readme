@@ -3,7 +3,8 @@
   margin: 0 auto;
   padding: 50px 20px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #d8d2be;
+  color: rgb(50, 44, 44);
 }
 
 .contact-us h2 {
@@ -44,4 +45,9 @@
 .book-images img {
   width: 120px; /* set the width of the images */
   margin: 0 10px; /* add some space between the images */
+  margin-top: 10px;
+}
+
+.background-colour {
+background: linear-gradient(to bottom, #43ff8b, #26c4b9);
 }

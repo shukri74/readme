@@ -10,6 +10,7 @@ import bookImage4 from '../../assets/contact-book-4.png';
 
 const ContactUs = () => {
   return (
+    <div className='background-colour'>
     <div className='contact-us'>
       <h2>Contact Us</h2>
       <p>If you have any questions or feedback, we'd love to hear from you. You can reach us through our individual GitHub accounts:</p>
@@ -26,6 +27,7 @@ const ContactUs = () => {
         <img src={bookImage3} alt='Book 3' />
         <img src={bookImage4} alt='Book 4' />
       </div>
+    </div>
     </div>
   );
 };
