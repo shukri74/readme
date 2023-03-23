@@ -2,15 +2,9 @@ import React from "react";
 import "./style.css";
 
 function SearchResults(props) {
-  const handleSave = () => {
-    const book = {
-      title: props.title,
-      publishDate: props.publishDate,
-    };
-    if (typeof props.onSave === "function") {
-      props.onSave(book);
-    }
-  };
+  function handleClick() {
+    props.onSave(props);
+  }
 
   return (
     <div className="card">
@@ -50,7 +44,7 @@ function SearchResults(props) {
             {props.publishDate}
           </p>
         </div>
-        <button className="button is-info" onClick={handleSave}>
+        <button className="button is-primary" onClick={handleClick}>
           Save
         </button>
       </div>
