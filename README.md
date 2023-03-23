@@ -2,7 +2,7 @@
 
 
 ## Description
-Readme Book Searching App is a web application that helps book lovers search for books and get inspirational quotes at the same time. This app uses the Open Library API and the Quotes API from quotable.io to provide users with a seamless experience of searching for books and getting inspired by quotes.. Here is the deployed app link [Readme](https://shukri74.github.io/fun-time/)
+Readme Book Searching App is a web application that helps book lovers search for books and get inspirational quotes at the same time. This app uses the Open Library API and the Quotes API from quotable.io to provide users with a seamless experience of searching for books and getting inspired by quotes.. Here is the deployed app link [Readme](https://celebrated-hummingbird-400b06.netlify.app/)
 
 ## Table of Contents
 * [Installation](#installation)
