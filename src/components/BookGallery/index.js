@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
-// import Book from "../Book";
 
 const BookGallery = () => {
   const [bookState, setBookState] = useState([]);
@@ -29,17 +28,16 @@ const BookGallery = () => {
        
         
       })
-      .catch((err) => setError(err));
+      .catch((err) => setError(error));
   }, []);
   
 // newlink = https://covers.openlibrary.org/b/isbn/9780385533225-S.jpg
 // oldlink = "https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"
-  // const bookList = bookState.map((book) => <Book {...book} key={book.local_id} />);
   const bookList = bookState.filter((book, idx) => idx < 10).map((book) =>
     <div className='column is-half'>
       <div className="card-image">
           <figure className="image is-1by1">
-              <img src={"https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"} alt="Placeholder image"/>
+              <img src={"https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"} alt={book.title}/>
           </figure>
           <div className="card-content">
               <p className="title is-4"><strong>Book Title: </strong>{book.title}</p>
