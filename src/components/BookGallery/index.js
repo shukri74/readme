@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
-import Book from "../Book";
+// import Book from "../Book";
 
 const BookGallery = () => {
   const [bookState, setBookState] = useState([]);
