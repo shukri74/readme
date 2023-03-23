@@ -55,7 +55,7 @@ Get inspirational quotes generated on the front page
 
 ### Tablet View screenshort:
 
-![Tablet View](src/assets/Tablet-view.png)
+![Tablet View](src/assets/Tablet-view1.png)
 
 
 ### Mobile View screenshort:
