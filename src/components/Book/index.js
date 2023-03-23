@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Book = ({ title,  publishers, key, publish_date }) => {
     // let url = https://covers.openlibrary.org/b/olid/${key}.jpg;
@@ -9,6 +9,7 @@ const Book = ({ title,  publishers, key, publish_date }) => {
     console.log(url);
 
     return (     
+        
       <div className='column is-half'>
         <div className="card-image">
             <figure className="image is-1by1">
