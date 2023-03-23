@@ -31,7 +31,7 @@ const BookGallery = () => {
         
       })
       .catch((err) => setError(error));
-  }, []);
+  }, [bookState,error]);
   
 // newlink = https://covers.openlibrary.org/b/isbn/9780385533225-S.jpg
 // oldlink = "https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"
