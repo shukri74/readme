@@ -15,7 +15,7 @@ const Book = ({ title,  publishers, key, publish_date }) => {
             <figure className="image is-1by1">
                 <img src={"https://covers.openlibrary.org/b/olid/"+{key}+".jpg"} alt="Placeholder image"/>;
             </figure>
-            <div class="card-content">
+            <div className="card-content">
             {/* <div class="media"> */}
             {/* <div class="media-left">
                 <figure class="image is-48x48">
@@ -23,12 +23,12 @@ const Book = ({ title,  publishers, key, publish_date }) => {
                 </figure>
             </div> */}
             {/* <div class="media-content"> */}
-                <p class="title is-4">{title}</p>
-                <p class="subtitle is-6">{publishers}</p>
+                <p className="title is-4">{title}</p>
+                <p className="subtitle is-6">{publishers}</p>
             {/* </div> */}
             {/* </div> */}
         
-            <div class="content">
+            <div className="content">
             <time><strong>Published in </strong>{publish_date}</time>
             </div>
         </div>

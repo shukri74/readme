@@ -41,10 +41,10 @@ const BookGallery = () => {
           <figure className="image is-1by1">
               <img src={"https://covers.openlibrary.org/b/olid/"+ imageUrl(book.key) +".jpg"} alt="Placeholder image"/>
           </figure>
-          <div class="card-content">
-              <p class="title is-4"><strong>Book Title: </strong>{book.title}</p>
-              <p class="subtitle is-6"><strong>Publisher: </strong>{book.publishers}</p>
-            <div class="content">
+          <div className="card-content">
+              <p className="title is-4"><strong>Book Title: </strong>{book.title}</p>
+              <p className="subtitle is-6"><strong>Publisher: </strong>{book.publishers}</p>
+            <div className="content">
               <time><strong>Published in </strong>{book.publish_date}</time>
             </div>
           </div>

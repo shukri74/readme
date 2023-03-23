@@ -4,9 +4,9 @@ import React from "react";
 function SearchForm(props) {
   return (
     <form className="search">
-      <div class="field">
-        <label class="label">Search Book:</label>
-        <div class="control">
+      <div className="field">
+        <label className="label">Search Book:</label>
+        <div className="control">
         <input 
           value={props.search}
           onChange={props.handleInputChange}
@@ -17,7 +17,7 @@ function SearchForm(props) {
           placeholder="Type book name for search"
           id="term"/>
         </div>
-        <p class="help">{props.error}</p>
+        <p className="help">{props.error}</p>
       </div>
     </form>
   );
